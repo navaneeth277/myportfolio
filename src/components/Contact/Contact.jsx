@@ -36,6 +36,7 @@ const Contact = ({ isDarkMode }) => {
         }
 
         const apiKey = import.meta.env.VITE_API_KEY;
+        console.log(apiKey);
         const apiKey1 = import.meta.env.VITE_API_KEY1;
         const apiKey2 = import.meta.env.VITE_API_KEY2;
 

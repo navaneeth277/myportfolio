@@ -12,7 +12,7 @@ const Header = ({ isDarkMode, toggleTheme }) => {
     return (
         <header className={`header ${isDarkMode ? "dark" : ""}`}>
             <a href="#home" className="logo">
-                My Portfolio
+                My Portfoli
             </a>
             <nav>
                 <ul className="nav-links">
