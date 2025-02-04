@@ -1,0 +1,204 @@
+/* Skills component styles */
+.skills {
+    background: linear-gradient(to bottom right, #e0f7fa, #adeaff); /* Light gradient background */
+    color: black;
+    text-align: center;
+    padding: 40px;
+    transition: background 0.3s, color 0.3s;
+    overflow: hidden;
+    border-radius: 15px; /* Added small curve */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+.skills.dark {
+    background: linear-gradient(to bottom right, #2c3e50, #0A0A0A); /* Dark gradient for dark mode */
+    color: white;
+}
+
+.skills h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap onto the next row if necessary */
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Individual Skill Cards */
+.skill-card {
+    width: 140px; /* Smaller card width */
+    height: 180px; /* Smaller card height */
+    perspective: 1000px;
+    cursor: pointer;
+    flex-basis: 140px; /* Cards take up 140px width */
+    max-width: 180px; /* Maximum width of the card */
+    transition: transform 0.6s ease;
+    border-radius: 15px; /* Added curve to individual skill cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
+}
+
+.skill-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.skill-card:hover .skill-card-inner {
+    transform: rotateY(180deg);
+}
+
+.skill-card-front,
+.skill-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px; /* Rounded corners for the front and back of the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.4s ease;
+}
+
+.skill-card-front {
+    background: linear-gradient(145deg, #f5f5f5, #9efbc6);
+}
+
+.skills.dark .skill-card-front {
+    background: linear-gradient(145deg, #333, #0afbf7);
+}
+
+.skill-card-back {
+    background: linear-gradient(145deg, #4caf50, #05780b);
+    transform: rotateY(180deg);
+}
+
+.skills.dark .skill-card-back {
+    background: linear-gradient(145deg, #1abc9c, #16a085);
+}
+
+.skill-icon {
+    font-size: 2rem; /* Smaller icons */
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-size: 0.9rem; /* Smaller text */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.skill-proficiency {
+    font-size: 1.2rem; /* Smaller proficiency text */
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Mobile-First Approach */
+@media (max-width: 600px) {
+    .skills {
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .skills h1 {
+        font-size: 1.8rem; /* Adjust heading size for mobile */
+        margin-bottom: 20px; /* Less space between heading and cards */
+    }
+
+    .skill-cards {
+        flex-direction: row; /* Keep cards in a row */
+        justify-content: center;
+        overflow-x: auto; /* Allow horizontal scrolling if there are many cards */
+        gap: 10px; /* Smaller gap between cards */
+    }
+
+    .skill-card {
+        width: 120px; /* Even smaller cards */
+        height: 160px; /* Reduced card height */
+        flex-basis: 120px; /* Adjust the width */
+    }
+
+    .skill-icon {
+        font-size: 1.8rem; /* Smaller icons */
+    }
+
+    .skill-name {
+        font-size: 0.8rem; /* Smaller text */
+    }
+
+    .skill-proficiency {
+        font-size: 1rem; /* Smaller proficiency text */
+    }
+}
+
+/* Tablets & Larger Screens (up to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .skills h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .skill-cards {
+        flex-direction: row; /* Keep cards in a row */
+        justify-content: center;
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .skill-card {
+        width: 160px; /* Slightly larger cards on tablets */
+        height: 200px;
+        flex-basis: 160px;
+    }
+
+    .skill-icon {
+        font-size: 2.5rem;
+    }
+
+    .skill-name {
+        font-size: 1rem;
+    }
+
+    .skill-proficiency {
+        font-size: 1.3rem;
+    }
+}
+
+/* Desktops (greater than 1024px) */
+@media (min-width: 1025px) {
+    .skills h1 {
+        font-size: 2.5rem;
+    }
+
+    .skill-cards {
+        flex-direction: row; /* Keep cards in a row */
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 200px;
+        height: 250px;
+        flex-basis: 200px;
+    }
+
+    .skill-icon {
+        font-size: 3rem; /* Default icon size */
+    }
+
+    .skill-name {
+        font-size: 1.2rem;
+    }
+
+    .skill-proficiency {
+        font-size: 1.5rem;
+    }
+}
