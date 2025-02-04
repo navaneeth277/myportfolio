@@ -107,7 +107,7 @@ const Contact = ({ isDarkMode }) => {
                 <a href="https://www.linkedin.com/in/navaneeth277/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin />
                 </a>
-                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/navaneeth277/" target="_blank" rel="noopener noreferrer">
                     <FaTwitter />
                 </a>
             </div>
