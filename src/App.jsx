@@ -9,7 +9,7 @@ import {Analytics} from "@vercel/analytics/react";
 
 
 const App = () => {
-    const [isDarkMode, setDarkMode] = useState(false);
+    const [isDarkMode, setDarkMode] = useState(true);
 
     const toggleTheme = () => {
         setDarkMode(!isDarkMode);
