@@ -19,14 +19,14 @@ const Projects = ({ isDarkMode }) => {
       description: "Your to-do list app is a simple and user-friendly tool built using React. It allows users to add, edit, and delete tasks, helping them stay organized and manage their daily activities efficiently.",
       image: Im2,
       github: "https://github.com/Navaneeth2707/To_Do_List",
-      demo: "https://link_to_project_demo.com",
+      demo: "https://github.com/Navaneeth2707/To_Do_List",
     },
     {
       title: "Find date using date",
       description: "The Find Date feature calculates a future or past date based on a given date. It simplifies date-based planning by allowing users to add or subtract days from the selected date easily.",
       image: Im1,
       github: "https://github.com/Navaneeth2707/Day-of-Date",
-      demo: "https://link_to_project_demo.com",
+      demo: "https://github.com/Navaneeth2707/Day-of-Date",
     },
   ];
 
