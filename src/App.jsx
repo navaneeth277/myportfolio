@@ -6,6 +6,7 @@ import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import "./App.css";
 import {Analytics} from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
             </main>
            
         </div>
+        <SpeedInsights />
         <Analytics/>
         </>
     );
