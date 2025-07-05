@@ -4,14 +4,23 @@ import Im from "../public/image.png"
 import Im1 from "../public/dod.png"
 import Im2 from "../public/To_do.png"
 import Im3 from "../public/Exper.png"
+import Im4 from "../public/Remindariy.png"
 
 const Projects = ({ isDarkMode }) => {
   const projects = [
     {
       title: "Expre - Exam Preparation Assistant",
+      description: "AI-powered personal assistant that turns your thoughts into tasks, reminders, notes, and even full diary entries. Just type what’s on your mind, and it does the rest. Built with React, Node.js, MongoDB, LangChain, and Gemini API — it’s smart, secure (JWT + XSS protection), and organized by date. A simple idea: Remind + Diary = Remindiary",
+      image: Im4,// Use public folder images directly
+      
+      github: "https://github.com/Navaneeth2707/Remindiary",
+      demo: "https://remindery.vercel.app/",
+    },
+    {
+      title: "Expre - Exam Preparation Assistant",
       description: "Expre is a web app built with React, Node.js, and the Gemini API to help with exam preparation. It includes features like summarizing content, extracting keywords, writing essays, and coding in languages like C++, Java, Python, and C. It’s designed with sections for questions, materials, and coding to make studying easier for students.",
       image: Im3,// Use public folder images directly
-      note:" NOTE : Let me know when you want to see it working—I need to start the backend.",
+    //  note:" NOTE : Let me know when you want to see it working—I need to start the backend.",
       github: "https://github.com/Navaneeth2707/",
       demo: "https://expre-frountend-taupe.vercel.app/",
     },
