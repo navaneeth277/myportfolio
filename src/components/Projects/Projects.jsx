@@ -5,12 +5,12 @@ import Im1 from "../public/dod.png"
 import Im2 from "../public/To_do.png"
 import Im3 from "../public/Exper.png"
 import Im4 from "../public/Remindariy.png"
-
+Remindiary
 const Projects = ({ isDarkMode }) => {
   const projects = [
     {
-      title: "Expre - Exam Preparation Assistant",
-      description: "AI-powered personal assistant that turns your thoughts into tasks, reminders, notes, and even full diary entries. Just type what’s on your mind, and it does the rest. Built with React, Node.js, MongoDB, LangChain, and Gemini API — it’s smart, secure (JWT + XSS protection), and organized by date. A simple idea: Remind + Diary = Remindiary",
+      title: "Remindiary",
+      description: "AI-powered personal assistant that turns your thoughts into tasks, reminders, notes, and even full diary entries. Just type what’s on your mind, and it does the rest. Built with React, Node.js, MongoDB, LangChain, and Gemini API — it’s smart, secure (JWT + XSS protection), and organized by date. A simple idea: Remind + Diary = ",
       image: Im4,// Use public folder images directly
       
       github: "https://github.com/Navaneeth2707/Remindiary",
