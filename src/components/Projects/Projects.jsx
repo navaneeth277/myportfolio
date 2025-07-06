@@ -5,7 +5,7 @@ import Im1 from "../public/dod.png"
 import Im2 from "../public/To_do.png"
 import Im3 from "../public/Exper.png"
 import Im4 from "../public/Remindariy.png"
-Remindiary
+//Remindiary
 const Projects = ({ isDarkMode }) => {
   const projects = [
     {

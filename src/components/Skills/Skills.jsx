@@ -11,7 +11,7 @@ const skillList = [
     { name: "Git", proficiency: 90, icon: <FaGitAlt /> },
     { name: "MongoDB", proficiency: 60, icon: <SiMongodb /> },
     { name: "Express.js", proficiency: 85, icon: <SiExpress /> },
-    { name: "PostgreSQL", proficiency: 7, icon: <SiPostgresql /> },
+    { name: "PostgreSQL", proficiency: 70, icon: <SiPostgresql /> },
     { name: "AWS", proficiency: 30, icon: <FaAws /> },            // ✅ Fixed
     { name: "Kubernetes", proficiency: 20, icon: <SiKubernetes /> }, // ✅ Fixed
     { name: "Docker", proficiency: 65, icon: <SiDocker /> },        // ✅ Fixed
